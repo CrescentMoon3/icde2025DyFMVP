@@ -1,0 +1,22 @@
+gnn:
+  - layer: 1
+    att_head: 2
+    dim_time: 128
+    dim_out: 54
+np:
+  - r_dim: 128
+    z_dim: 128
+    h_dim: 128
+    y_dim: 128
+    t_dim: 128
+    out_dim: 54
+    l: 10
+    r_tol: 1e-5
+    a_tol: 1e-7
+    mem_size: 10
+    method: "dopri5"
+    context_split: 0.1
+    old_as_context: true
+train:
+  - lr: 3e-5
+    dropout: 0.1
